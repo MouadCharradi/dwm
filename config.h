@@ -6,8 +6,8 @@ static const unsigned int gappx     = 1;        /* gaps between windows */
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
-static const char *fonts[]          = { "DejaVuSansMono:size=12" };
-static const char dmenufont[]       = "DejaVuSansMono:size=12";
+static const char *fonts[]          = { "DejaVuSansMono:size=13" };
+static const char dmenufont[]       = "DejaVuSansMono:size=13";
 static const char col_gray1[]       = "#1d2021";
 static const char col_gray2[]       = "#444444";
 static const char col_gray3[]       = "#bbbbbb";
@@ -72,7 +72,7 @@ static const Key keys[] = {
 	{ MODKEY,                       XK_j,      focusstack,     {.i = +1 } },
 	{ MODKEY,                       XK_k,      focusstack,     {.i = -1 } },
 	{ MODKEY,                       XK_i,      incnmaster,     {.i = +1 } },
-	/* { MODKEY,                       XK_d,      incnmaster,     {.i = -1 } }, */
+	{ MODKEY|ShiftMask,             XK_i,      incnmaster,     {.i = -1 } },
 	{ MODKEY,                       XK_h,      setmfact,       {.f = -0.05} },
 	{ MODKEY,                       XK_l,      setmfact,       {.f = +0.05} },
 	{ MODKEY|ShiftMask,             XK_h,      setcfact,       {.f = +0.25} },
